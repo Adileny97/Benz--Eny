@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+#contact {
+    background-color: white;
+    padding: 2em;
+    margin: 2em auto;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-top: 1em;
+    text-align: left;
+    font-weight: bold;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 1em;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+@keyframes moveAround {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(10px, -10px); }
+    50% { transform: translate(-10px, 10px); }
+    75% { transform: translate(10px, 10px); }
+    100% { transform: translate(0, 0); }
+}
+footer {
+    background-color: #471d1d57;
+    color: rgb(126, 208, 38);
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-style: italic;
+    font-weight: bold;
+}
+  header h1 {
+    animation: color-change 5s infinite, smooth-shake 3s infinite;
+  }
+  header nav ul li a {
+    animation: color-change 10s infinite, smooth-shake 6s infinite;
+  }
+@keyframes color-change {
+    0% { color: red; }
+    20% { color: blue; }
+    40% { color: green; }
+    60% { color: orange; }
+    80% { color: purple; }
+    100% { color: red; }
+  }
+  @keyframes smooth-shake {
+    0% { transform: translate(0px, 0px); }
+    25% { transform: translate(5px, 5px); }
+    50% { transform: translate(-5px, -5px); }
+    75% { transform: translate(5px, -5px); }
+    100% { transform: translate(-5px, 5px); }
+  }
+  header h1 {
+    animation: color-change 5s infinite, smooth-shake 3s infinite;
+  }
+  header nav ul li a {
+    animation: color-change 10s infinite, smooth-shake 6s infinite;
+  }
+  footer p {
+    animation: color-change 8s infinite, smooth-shake 4s infinite;
+  }
+  #contact {
+    font-family: cursive;
+    font-weight: bold;
+    animation: color-change 5s infinite, smooth-shake 0s infinite;
+  }
+  @keyframes color-change {
+    0% { color: red; }
+    20% { color: blue; }
+    40% { color: green; }
+    60% { color: orange; }
+    80% { color: purple; }
+    100% { color: red; }
+  }

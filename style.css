@@ -1,0 +1,347 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+    box-shadow: #007BFF;
+}
+
+header {
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header .logo {
+    max-width: 100px;
+     height: auto; 
+     text-decoration: solid;
+    } 
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 2em;
+    text-align: center;
+}
+
+main img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+h2 {
+    color: #444;
+}
+
+.car {
+    background-color: white;
+    padding: 1em;
+    margin: 1em 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+
+
+@keyframes colorChangeButton {
+    0% { background-color: #007BFF; }
+    33% { background-color: #FF4500; }
+    66% { background-color: #32CD32; }
+    100% { background-color: #007BFF; }
+}
+
+button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: colorChangeButton 3s infinite;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+footer {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    animation: colorChangeButton 5s infinite;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+
+@keyframes moveAround {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(10px, -10px); }
+    50% { transform: translate(-10px, 10px); }
+    75% { transform: translate(10px, 10px); }
+    100% { transform: translate(0, 0); }
+}
+
+#featured h2 {
+    display: inline-block;
+    animation: moveAround 4s infinite;
+    border: 2px solid #12ffdb;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(0, 42, 255);
+    
+}
+@keyframes moveAround {
+    0% { transform: translate(0, 0); }
+    25% { transform: translate(10px, -10px); }
+    50% { transform: translate(-10px, 10px); }
+    75% { transform: translate(10px, 10px); }
+    100% { transform: translate(0, 0); }
+}
+#intro h2 {
+    display: inline-block;
+    animation: moveAround 4s infinite;
+    border: 2px solid #12ffdb;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(231, 97, 15);
+}
+
+
+
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    animation: rotate 10s linear infinite;
+}
+
+
+@keyframes colorChange {
+    0% { color: red; }
+    33% { color: green; }
+    66% { color: blue; }
+    100% { color: red; }
+}
+
+.box {
+    background-color: #ffffff;
+    border: 2px solid #007BFF;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1.2em;
+    animation: colorChange 3s infinite;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+}
+
+
+@keyframes colorCycle {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+}
+
+.logo {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    animation: colorCycle 2s infinite linear;
+}
+
+
+@keyframes colorChangeButton {
+    0% { background-color: #007BFF; }
+    33% { background-color: #FF4500; }
+    66% { background-color: #32CD32; }
+    100% { background-color: #007BFF; }
+    1% { background-color: #000000; }
+    1% { background-color: gold; }
+    
+}
+
+button {
+    color: rgb(255, 255, 255);
+    border: indigo;
+    padding: 10px 20px;
+    cursor: pointer;
+    animation: colorChangeButton 3s infinite;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    box-shadow: #0056b3;
+
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+
+.heart {
+    width: 100px;
+    height: 100px;
+    background: url("https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+.heart::before,
+.heart::after {
+    content: "";
+    width: 100px;
+    height: 100px;
+    background: url("https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg") no-repeat center center;
+    background-size: cover;
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 50px;
+}
+
+.heart::before {
+    left: 0;
+}
+
+.circle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background: url("https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg") no-repeat center center;
+    background-size: cover;
+}
+#audi{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: blue;
+}
+.car{
+    font-style: oblique;
+    flood-color: #0dff00;
+    color: rgb(255, 6, 6);
+    font-weight: bolder;
+}
+@keyframes moveAndChangeColor {
+    0% { transform: translate(0, 0); color: red; }
+    25% { transform: translate(10px, -10px); color: green; }
+    50% { transform: translate(-10px, 10px); color: blue; }
+    75% { transform: translate(10px, 10px); color: yellow; }
+    100% { transform: translate(0, 0); color: red; }
+}
+
+#featured .moving-heading {
+    display: inline-block;
+    animation: moveAndChangeColor 3s infinite;
+    font-weight: bold;
+}
+
+
+
+@keyframes color-change {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+  }
+  
+ 
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  /* Apply animations to the header text */
+  header h1 {
+    animation: color-change 5s infinite, shake 0.88s infinite;
+  }
+  /* Add this to your existing style.css file */
+
+/* Define colors for the nav links */
+@keyframes color-change-nav {
+    0% { color: red; }
+    25% { color: blue; }
+    50% { color: green; }
+    75% { color: orange; }
+    100% { color: purple; }
+  }
+  
+  
+  @keyframes slow-shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+  
+  
+  header nav ul li a {
+    animation: color-change-nav 5s infinite, slow-fs infinite;
+  }
+  
+  
