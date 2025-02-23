@@ -343,5 +343,22 @@ button:hover {
   header nav ul li a {
     animation: color-change-nav 5s infinite, slow-fs infinite;
   }
-  
+  .cookie-consent-banner {
+    display: none; /* Hidden by default */
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #FFFFFF;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+}
+
+.cookie-consent-banner p {
+    display: inline;
+    margin-right: 10px;
+}
+
   
