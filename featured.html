@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Featured Cars - Car Enthusiast</title>
+    <title>Featured Cars - Cars Eny benz</title>
     <script>
   // Define dataLayer and the gtag function.
   window.dataLayer = window.dataLayer || [];
@@ -38,16 +38,24 @@
         <section id="featured">
             <h2>Featured Cars</h2>
             <div class="car">
-                <h3>Audi is a dream</h3>
-                <img src="https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg" width="300" alt="Ferrari F8 Tributo">
-                <p>A stunning blend of power and elegance.</p>
+            <h3>Audi is a dream</h3>
+            <img src="https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg" width="300" alt="Audi is a dream">
+            <p>A stunning blend of power and elegance.</p>
             </div>
             <div class="car">
-                <h3>Audi Everywhere it's shanniy </h3>
-                <img src="https://images.pexels.com/photos/10066082/pexels-photo-10066082.jpeg" width="300" alt="Tesla Model S">
-                <p>The future of electric performance.</p>
+            <h3>Audi Everywhere it's shanniy</h3>
+            <img src="https://images.pexels.com/photos/10066082/pexels-photo-10066082.jpeg" width="300" alt="Audi Everywhere it's shanniy">
+            <p>The future of electric performance.</p>
             </div>
         </section>
+        <script>
+            fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                console.log('Your IP address is: ', data.ip);
+            })
+            .catch(error => console.error('Error fetching the IP address:', error));
+        </script>
     </main>
     <footer>
         <p>&copy; 2025 Car Eny Benz</p>
