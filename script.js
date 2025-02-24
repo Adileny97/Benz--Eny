@@ -38,3 +38,10 @@ document.addEventListener('DOMContentLoaded', function() {
         cookieConsentBanner.style.display = 'none';
     });
 });
+gtag('consent', 'default', {
+  'ad_storage': 'denied',
+  'ad_user_data': 'denied',
+  'ad_personalization': 'denied',
+  'analytics_storage': 'denied'
+});
+
