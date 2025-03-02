@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Create the ball element
     var ball = document.createElement("div");
-    ball.innerHTML = "Adil";
+    ball.innerHTML = "Benz";
     ball.style.position = "absolute";
     ball.style.width = "50px";
     ball.style.height = "50px";
