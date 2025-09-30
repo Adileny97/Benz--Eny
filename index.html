@@ -1,68 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Car Eny benz</title>
-    <script>
-  // Define dataLayer and the gtag function.
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-</script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Car Any Benz</title>
 
-    <link rel="stylesheet" href="style.css">
-    
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8MS9N9C17P"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
 
-  gtag('config', 'G-8MS9N9C17P');
-</script>
+  <!-- External CSS -->
+  <link rel="stylesheet" href="style.css" />
 
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8MS9N9C17P"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-8MS9N9C17P');
+  </script>
+
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header, footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    nav ul li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+    }
+    .car {
+      margin: 20px;
+      padding: 10px;
+      background-color: white;
+      border-radius: 8px;
+    }
+    .cookie-consent-banner {
+      background-color: #eee;
+      padding: 15px;
+      text-align: center;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to Car eny Benz</h1>
-        <img class="logo" src="https://images.pexels.com/photos/261985/pexels-photo-261985.jpeg" width="600" alt="Car Enthusiast Logo">
-        <nav>
-            <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="featured.html">Featured Cars</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="intro">
-            <p class="box">Explore the latest news, reviews, and tips for car lovers.</p>
-            <img src="https://images.pexels.com/photos/909907/pexels-photo-909907.jpeg" width="300" alt="Car Banner">
-        </section>
-        <section id="featured">
-            <h2>Featured Cars</h2>
-            <div class="car">
-                <h3 id="audi">Audi it's a Dream car</h3>
-                <img src="https://images.pexels.com/photos/244206/pexels-photo-244206.jpeg" width="300" alt="Ferrari F8 Tributo">
-                <p id="audi">A stunning blend of power and elegance.</p>
-            </div>
-            <div class="car">
-                <h3 class="moving-heading">Audi one of your shoise</h3>
-                <img src="https://images.pexels.com/photos/10066082/pexels-photo-10066082.jpeg" width="300" alt="Tesla Model S">
-                <p>The future of electric performance.</p>
-            </div>
-        </section>
-        <button id="contactButton">Contact Us</button>
-    </main>
-    <footer>
-        <p>&copy; 2025 Car Eny Benz</p>
-    </footer>
-    
-    <div class="cookie-consent-banner" id="cookieConsent">
-        <p>We use cookies to ensure you get the best experience on our website. <a href="privacy.html" style="color: #007BFF;">Learn more</a></p>
-        <button id="acceptCookies" style="background-color: #007BFF; color: #FFFFFF; border: none; padding: 10px 20px; border-radius: 5px;">Accept</button>
-    </div>
-    <script src="script.js"></script>
+  <header>
+    <h1>Welcome to Car Any Benz</h1>
+    <img class="logo" src="https://images.pexels.com/photos/358070/pexels-photo-358070.jpeg" width="600" alt="Luxury Car Logo" />
+    <nav>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="featured.html">Featured Cars</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="intro">
+      <p class="box">Explore the latest news, reviews, and tips for car enthusiasts.</p>
+      <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" width="300" alt="Car Banner" />
+    </section>
+
+    <section id="featured">
+      <h2>Featured Cars</h2>
+      <div class="car">
+        <h3>Audi – A Dream Machine</h3>
+        <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg" width="300" alt="Audi Car" />
+        <p>A stunning blend of power and elegance.</p>
+      </div>
+      <div class="car">
+        <h3>Mercedes – Your Premium Choice</h3>
+        <img src="https://images.pexels.com/photos/120049/pexels-photo-120049.jpeg" width="300" alt="Mercedes Car" />
+        <p>Luxury and performance in perfect harmony.</p>
+      </div>
+    </section>
+
+    <button onclick="window.location.href='contact.html'">Contact Us</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Car Any Benz</p>
+  </footer>
+
+  <div class="cookie-consent-banner" id="cookieConsent">
+    <p>We use cookies to ensure you get the best experience on our website. <a href="privacy.html" style="color: #007BFF;">Learn more</a></p>
+    <button id="acceptCookies" style="background-color: #007BFF; color: #FFFFFF; border: none; padding: 10px 20px; border-radius: 5px;">Accept</button>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
