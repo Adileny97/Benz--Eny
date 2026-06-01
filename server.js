@@ -1,6 +1,7 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const nodemailer = require('nodemailer');
+const path = require('path');
 
 const app = express();
 const port = process.env.PORT || 3000;
@@ -9,10 +10,18 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Route to handle form submission
+// ✅ Serve all static files (HTML, CSS, JS)
+app.use(express.static(__dirname));
+
+// ✅ Homepage route
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Contact form route
 app.post('/contact', (req, res) => {
     const { name, email, message } = req.body;
-    // Configure nodemailer
+
     const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
@@ -36,12 +45,7 @@ app.post('/contact', (req, res) => {
     });
 });
 
+// Start server
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
-});
-const path = require('path');
-app.use(require('express').static(__dirname));
-
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'index.html'));
 });
