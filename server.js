@@ -10,10 +10,10 @@ const port = process.env.PORT || 3000;
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
-// Serve static files (HTML, CSS, JS)
+// ⭐ Serve static files (HTML, CSS, JS)
 app.use(express.static(__dirname));
 
-// Homepage route
+// ⭐ Homepage route
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
 });
