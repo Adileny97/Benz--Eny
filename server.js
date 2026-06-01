@@ -39,3 +39,9 @@ app.post('/contact', (req, res) => {
 app.listen(port, () => {
     console.log(`Server running on port ${port}`);
 });
+const path = require('path');
+app.use(require('express').static(__dirname));
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
